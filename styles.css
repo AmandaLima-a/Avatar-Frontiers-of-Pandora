@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerVideo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fechar {
+    color: #fff;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.fechar:hover, .fechar:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://lumiere-a.akamaihd.net/v1/images/g_avatar_frontiersofpandora_2060_05_d49cae31.jpeg?region=1%2C0%2C1298%2C730");
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+img {
+    width: 450px;
+}
+
+#paragrafo {
+    width: 40%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    
+    background: rgba(255, 255, 255, .4);
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+button {
+    height: 50px;
+    width: 220px;
+    margin: 10px 50px;
+
+    background-color: rgba(36, 83, 52, 0.7);
+    border: 1px solid rgb(100, 244, 56);
+    border-radius: 0 20px;
+    
+    cursor: pointer;
+
+    color: rgb(100, 244, 56);
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 25px;
+}
